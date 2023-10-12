@@ -67,7 +67,7 @@ body {
 #section2 {
   display: flex;
   margin-bottom: 20px;
-  height: 90vh;
+  height: 730px;
 }
 #section2 img {
   width: 50%;
@@ -146,8 +146,8 @@ body {
 }
 .perfect-shade-wrapper .perfect-shade-item1 {
   grid-row-start: 1;
-  grid-column-start: 1;
   grid-row-end: 4;
+  grid-column-start: 1;
   grid-column-end: 1;
   align-items: center;
   display: flex;
@@ -178,11 +178,11 @@ body {
      object-fit: cover;
 }
 .perfect-shade-wrapper .perfect-shade-item3 {
-  grid-row-start: 2;
-  grid-column-start: 5;
-  grid-row-end: 4;
-  grid-column-end: 6;
   width: 100%;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 5;
+  grid-column-end: 6;
   margin-top: -60px;
 }
 .perfect-shade-wrapper .perfect-shade-item3 img {
@@ -190,8 +190,8 @@ body {
 }
 .perfect-shade-wrapper .perfect-shade-item4 {
   grid-row-start: 3;
-  grid-column-start: 2;
   grid-row-end: 4;
+  grid-column-start: 2;
   grid-column-end: 4;
   width: 100%;
   max-width: 220px;
@@ -206,8 +206,8 @@ body {
 }
 .perfect-shade-wrapper .perfect-shade-item5 {
   grid-row-start: 3;
-  grid-column-start: 4;
   grid-row-end: 4;
+  grid-column-start: 4;
   grid-column-end: 5;
   width: 100%;
   max-width: 167px;
@@ -282,5 +282,19 @@ body {
     background-color: black;
     color: whitesmoke;
     transition: 1s;
+  }
+  #section2 {
+    display: inline-block;
+    height: 300px;
+    width: 690px;
+  }
+  #section2 .env-text {
+    padding: 20px 70px 40px 70px;
+  }
+  .perfect-shade-item1 img, .perfect-shade-item2 img, .perfect-shade-item3 img, .perfect-shade-item4 img, .perfect-shade-item5 img {
+    display: none;
+  }
+  .perfect-shade-content {
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

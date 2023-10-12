@@ -24,57 +24,6 @@ body{
     --primary: #{$primary-bg-color}; //custom variables
 }
 
-// header{
-//     background-color: white;
-//     nav{
-//         position: sticky;
-//         top:0;
-//         display: flex;
-//         justify-content: space-between;
-//         flex-wrap: wrap;  
-//         align-items: center;
-//         margin: {
-//             left: 15px;
-//             right: 15px;
-//             top: 5px;
-//             bottom: 5px;
-//         }
-//         img{
-//             width: 150px;
-//             height: 60px;
-//             margin-left: -40px;
-//         }
-    
-//         ul{
-//             li{
-//                 margin: 10px;
-//                 display: inline-block;
-//                 font-family: $primary-font-stack;
-//                 position: relative;
-//                 a{
-//                     text-decoration: none;
-//                     color: black;
-//                 }
-//                 a::after{
-//                     content: '';
-//                     left: 0;
-//                     bottom: -5px;
-//                     width: 0;
-//                     height: 1px;
-//                     transition: transform 0.7s ease-in-out;
-//                     background: black;
-//                     position: absolute;
-//                     transform: scaleX(0);
-//                 }
-//                 a:hover::after{
-//                     width: 100%;
-//                     transform: scaleX(1);
-//                 }
-//             }   
-//         }
-//     }
-// }
-
 
 #intro{
     background-image: url(/images/img39.jpeg);
@@ -115,7 +64,7 @@ body{
 #section2{
     display: flex;
     margin-bottom: 20px;
-    height: 90vh;
+    height: 730px;
     img{
         width: 50%;
         float: left;
@@ -201,11 +150,16 @@ body{
         }
     }
     .perfect-shade-item1{
-        //display: grid;
-        grid-row-start: 1;
-        grid-column-start: 1;
-        grid-row-end: 4;
-        grid-column-end: 1;
+        grid: {
+            row: {
+                start:1;
+                end:4;
+            }
+            column: {
+                start:1;
+                end:1;              
+            }
+        }
         align-items: center;
         display: flex;
         max-width: 160px;
@@ -219,10 +173,6 @@ body{
         }
     }
     .perfect-shade-item2{
-        // grid-row-start: 1;
-        // grid-column-start: 2;
-        // grid-row-end: 1;
-        // grid-column-end: 6;
         grid: {
             row: {
                 start:1;
@@ -246,11 +196,17 @@ body{
         }
     }
     .perfect-shade-item3{
-        grid-row-start: 2;
-        grid-column-start: 5;
-        grid-row-end: 4;
-        grid-column-end: 6;
         width: 100%;
+        grid: {
+            row: {
+                start:2;
+                end:4;
+            }
+            column: {
+                start:5;
+                end:6;              
+            }
+        }
        // max-width: 300px;
         margin-top: -60px;
         img{
@@ -259,10 +215,16 @@ body{
         }
     }
     .perfect-shade-item4{
-        grid-row-start: 3;
-        grid-column-start: 2;
-        grid-row-end: 4;
-        grid-column-end: 4;
+        grid: {
+            row: {
+                start:3;
+                end:4;
+            }
+            column: {
+                start:2;
+                end:4;              
+            }
+        }
         width: 100%;
         max-width: 220px;
         img{
@@ -274,10 +236,16 @@ body{
         }
     }
     .perfect-shade-item5{
-        grid-row-start: 3;
-        grid-column-start: 4;
-        grid-row-end: 4;
-        grid-column-end: 5;
+        grid: {
+            row: {
+                start:3;
+                end:4;
+            }
+            column: {
+                start:4;
+                end:5;              
+            }
+        }
         width: 100%;
         max-width: 167px;
         img{
@@ -308,7 +276,6 @@ body{
             p{
                 margin-top: -40px;
                 margin-left: 20px;
-                // font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 font-style: italic;
             }
             .p-even{
@@ -331,129 +298,6 @@ body{
     }
 }
 
-// .footer{
-//     display: flex;
-//     height: 50vh;
-//     &-newsletter{
-//         flex:1;
-//         background-color: $secondary-bg-color;
-//         display: inline-block;
-//         padding-top: 120px;
-//         &-text{
-//             .title{
-//                 font-family: $primary-font-stack;
-//             }
-//             margin-left: 20px;
-//             .email-input{
-//                 // a{
-//                 //     text-decoration: none;
-//                 //     color: black;
-//                 // }
-//                 input{
-//                     width: 400px;
-//                     height: 30px;
-//                     background-color: btn-bg-color;
-//                     text-decoration: none
-//                 }
-//             }
-//             .btn-submit{
-//                 @extend %btn-toolbelt;
-               
-//                 margin-left: 0px;
-//                 margin-top: 20px;
-//                 &:hover{
-//                     @include set-btn-hover(color);
-//                 }
-//             }
-//         }
-//     }
-//     &-contact{
-//         flex:1;
-//         background-color: $primary-bg-color;
-//         .col{
-//             display: inline-block;
-//             margin: 20px;
-//             padding-top: 70px;
-//             ul{
-//                 li{
-//                     font-family: $primary-font-stack;
-//                     list-style-type: none;
-//                     margin: 20px;
-//                 }
-//             }
-//         }
-//     }   
-// }
 
-// #philosophy{
-//     background-image: url(/images/img47.webp);
-//     background-position: center;
-//     background-size: cover;
-//     height: 85vh;
-//     position: relative;
-
-//     h4{
-//         position: absolute;
-//         top:430px;
-//         // margin-top: 400px;
-//         left: 40%;
-//         font-size: 46px;
-//         color: $primary-bg-color;
-//         text-decoration: none;
-//         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-//     }
-// }
-
-// #philosophy-text{
-//     height: 50vh;
-//     padding-top: 100px;
-//     p{
-//         text-align: center; 
-//         font-style: italic;
-//         font-size: larger;
-//     }
-// }
-
-// #about-1{
-//     display: flex;
-//     margin-bottom: 20px;
-//     max-height: 700px;
-//     img{
-//         max-width: 50%;
-//         float: left;
-//     }
-//     .about1-text{
-//         max-width: 50%;
-//         padding: 70px;
-//         padding-top: 200px;
-//         background-color: $primary-bg-color;
-//         h4{
-//             font-style: italic;
-//             font-weight: lighter;
-//             font-size: x-large;
-//         }
-//     }
-// }
-
-// #about-2{
-//     display: flex;
-//     margin-bottom: 20px;
-//     max-height: 700px;
-//     img{
-//         max-width: 50%;
-//     }
-//     .about2-text{
-//         max-width: 50%;
-//         float: left;
-//         padding: 70px;
-//         padding-top: 200px;
-//         background-color: $primary-bg-color;
-//         h4{
-//             font-style: italic;
-//             font-weight: lighter;
-//             font-size: x-large;
-//         }
-//     }
-// }
 
 @import 'mobile';

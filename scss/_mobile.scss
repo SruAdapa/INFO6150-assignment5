@@ -25,4 +25,31 @@
             }
         }
     }
+
+    #section2{
+        display: inline-block;
+        height:300px;
+        width: 690px;
+        .env-text{
+            padding: 20px 70px 40px 70px;
+        }
+    }
+
+    .perfect-shade-item1, .perfect-shade-item2, .perfect-shade-item3, .perfect-shade-item4, .perfect-shade-item5{
+       img{
+        display: none;
+       }
+    }
+
+    .perfect-shade-content{
+        margin-top: 30px;
+    }
+
+
+    // .footer{
+    //     display: inline-block;
+    //     &-newsletter{
+    //     }
+    // }
+
 }
