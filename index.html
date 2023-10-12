@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="scss/style.css">
+    <script src="https://kit.fontawesome.com/05f438e384.js" crossorigin="anonymous"></script>
 </head>
 <body>
         <header>
@@ -12,7 +13,7 @@
                 <a href="index.html"><img src="images/freya.png" alt="freya" class="logo"></a>
                 <ul>
                     <li><a href="index.html">SHOP</a></li>
-                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
                     <li><a href="index.html">SUSTAINABILITY</a></li>
                     <li><a href="index.html">JOURNAL</a></li>
                     <li><a href="index.html">BAG</a></li>
@@ -25,10 +26,10 @@
                 <p class="heading-text">
                     Introducing The One Reset & Restore Moisture Cream
                 </p>
-                <p  class="para-text">
-                    Meet the revolutionary facial moisturiser that will change the way you take care of your skin.
-    This all-rounder is crafted with a potent stack of clinically proven plant actives to provide visible instant and ongoing skin benefits.
-                </p>
+                <div  class="para-text">
+                   <div class="para-text-1">Meet the revolutionary facial moisturiser that will change the way you take care of your skin.</div> 
+                    <div class="para-text-2">This all-rounder is crafted with a potent stack of clinically proven plant actives to provide visible instant and ongoing skin benefits.</div> 
+                </div>
                 <button class="btn_discover" onclick="location.href='about.html'">
                     DISCOVER MORE
                 </button>
@@ -39,21 +40,23 @@
         <div id="section2">
             <img src="images/img11.jpeg" alt="products">
             <div class="env-text">
-                <p>
+                <p class="heading1">
                     People, Planet & Animal Friendly.
                 </p>    
-                <p>
+                <p class="heading2">
                     Freya is at one.
                 </p>
-                <p>Consciously formulated with premium clean, vegan ingredients that do an outstanding job in the moment, and proactively nourish the skin over time.</p>
-                <p>Aleph is a revolutionary multi-use makeup system to support the wearer and the planet now and in the future.</p>
+                <p class="text1">Consciously formulated with premium clean, vegan ingredients that do an outstanding job in the moment, and proactively nourish the skin over time.</p>
+                <p class="text2">Freya is a revolutionary multi-use makeup system to support the wearer and the planet now and in the future.</p>
                 <ul class="text-list">
-                    <li>Vegan</li>
-                    <li>Cruelty free</li>
-                    <li>No GMO</li>
-                    <li>No toxins</li>
+                    <li><i class="fa-solid fa-check"></i>  Vegan</li>
+                    <li><i class="fa-solid fa-check"></i>  Cruelty free</li>
+                    <li><i class="fa-solid fa-check"></i>  No GMO</li>
+                    <li><i class="fa-solid fa-check"></i>  No toxins</li>
                 </ul>
-                <button class="btn-philosophy">READ OUR PHILOSOPHY</button>
+                <button class="btn-philosophy" onclick="location.href='about.html'">
+                    READ OUR PHILOSOPHY
+                </button>
             </div>
         </div>
 
@@ -62,7 +65,7 @@
                 <div class="perfect-shade-info">
                     <div class="perfect-shade-content"> 
                         <h2 class="perfect-shade-title">Find the <em> perfect shade</em> for you</h2>
-                        <p class="perfect-shade-desc">Born from the knowledge and makeup artistry of founder Emma Peters, Aleph has developed a personalised process to find the most complimentary shades for your unique complexion. Select our specialised quiz, or opt for a personal colour consult.</p>
+                        <p class="perfect-shade-desc">Born from the knowledge and makeup artistry of founder, Freya has developed a personalised process to find the most complimentary shades for your unique complexion. Select our specialised quiz, or opt for a personal colour consult.</p>
                         <button class="perfect-shade-btn">GET STARTED</button>
                     </div>
                 </div>
@@ -115,7 +118,7 @@
         <footer class="footer">
             <div class="footer-newsletter">
                 <div class="footer-newsletter-text">
-                    <p>NEWSLETTER</p>
+                    <p class="title">NEWSLETTER</p>
                     <p>Sign up to our newsletter and receive 10% off your first Freya order</p>
                     <div class="email-input">
                         <input type="text" placeholder="Your Email">

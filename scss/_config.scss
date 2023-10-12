@@ -1,4 +1,4 @@
-$font-stack: "Untitled Sans", sans-serif;
+$primary-font-stack: 'Courier New', Courier, monospace;
 $primary-bg-color: #EFECE6;
 $secondary-bg-color:#E4E1DC;
 $btn-bg-color:$primary-bg-color;
@@ -10,18 +10,6 @@ $btn-hover-color:black;
     text-align: center;  
 }
 
-//placeholder selector
-%btn-toolbelt{
-    position: relative;
-    align-self: center;
-    background-color:$btn-bg-color;
-    //padding: 10px;
-    padding: 15px 60px;
-    margin: 0 auto;
-    display: block;
-    border-width: 0;
-}
-
 @mixin set-btn-hover($property){ //interpolation
     background-#{$property} : $btn-hover-color;
     #{$property} :whitesmoke;
@@ -30,7 +18,7 @@ $btn-hover-color:black;
 }
 
 // set the text color based on the number of grid
-@function set-text-color($evenOrOdd) {
+@function set-text-color($evenOrOdd) { //function
     @if($evenOrOdd == 0) {
         @return #000;
     }
