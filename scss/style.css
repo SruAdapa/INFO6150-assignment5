@@ -1,4 +1,4 @@
-.perfect-shade-wrapper .perfect-shade-info .perfect-shade-content .perfect-shade-btn, #section2 .env-text .btn-philosophy, #intro .text .btn_discover {
+.footer-newsletter-text .btn-submit, .perfect-shade-wrapper .perfect-shade-info .perfect-shade-content .perfect-shade-btn, #section2 .env-text .btn-philosophy, #intro .text .btn_discover {
   position: relative;
   align-self: center;
   background-color: #EFECE6;
@@ -44,8 +44,9 @@ header nav {
   margin-bottom: 5px;
 }
 header nav img {
-  width: 120px;
+  width: 150px;
   height: 60px;
+  margin-left: -40px;
 }
 header nav ul li {
   margin: 10px;
@@ -175,11 +176,10 @@ header nav ul li a:hover::after {
 }
 .perfect-shade-wrapper .perfect-shade-info .perfect-shade-content .perfect-shade-title {
   font-size: 40px;
-  font-family: sans-serif;
-  font-weight: normal;
+  font-weight: 20;
 }
 .perfect-shade-wrapper .perfect-shade-info .perfect-shade-content .perfect-shade-title em {
-  font-family: serif;
+  font-family: sans-serif;
   font-style: italic;
 }
 .perfect-shade-wrapper .perfect-shade-info .perfect-shade-content .perfect-shade-btn {
@@ -319,9 +319,20 @@ header nav ul li a:hover::after {
 .footer-newsletter-text .title {
   font-family: "Courier New", Courier, monospace;
 }
-.footer-newsletter-text .email-input a {
+.footer-newsletter-text .email-input input {
+  width: 400px;
+  height: 30px;
+  background-color: btn-bg-color;
   text-decoration: none;
-  color: black;
+}
+.footer-newsletter-text .btn-submit {
+  margin-left: 0px;
+  margin-top: 20px;
+}
+.footer-newsletter-text .btn-submit:hover {
+  background-color: black;
+  color: whitesmoke;
+  transition: 1s;
 }
 .footer-contact {
   flex: 1;
@@ -405,4 +416,32 @@ header nav ul li a:hover::after {
   font-style: italic;
   font-weight: lighter;
   font-size: x-large;
+}
+
+@media (max-width: 700px) {
+  #intro .text {
+    margin-top: 10px;
+  }
+  #intro .text .heading-text {
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 60px;
+  }
+  #intro .text .para-text {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 16px;
+  }
+  #intro .text .btn_discover {
+    padding: 15px 40px;
+    margin-top: 20px;
+  }
+  #intro .text .btn_discover:hover {
+    background-color: black;
+    color: whitesmoke;
+    transition: 1s;
+  }
 }/*# sourceMappingURL=style.css.map */

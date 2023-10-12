@@ -40,8 +40,9 @@ header{
             bottom: 5px;
         }
         img{
-            width: 120px;
+            width: 150px;
             height: 60px;
+            margin-left: -40px;
         }
     
         ul{
@@ -69,12 +70,7 @@ header{
                     width: 100%;
                     transform: scaleX(1);
                 }
-            }
-
-            
-
-            
-            
+            }   
         }
     }
 }
@@ -95,8 +91,7 @@ header{
         font-size: 50px;
         font-style: italic;
         margin-bottom: 30px;
-        margin-left: 150px; 
-        margin-right: 150px; 
+        @include set-font-size(5, margin);
         }
         .para-text{
             margin-left: 150px; 
@@ -189,10 +184,10 @@ header{
         .perfect-shade-content{
             .perfect-shade-title{
                 font-size: 40px;
-                font-family:sans-serif;
-                font-weight: normal;
+                //font-family:sans-serif;
+                font-weight: 20;
                 em{
-                    font-family:serif;
+                    font-family:sans-serif;
                     font-style: italic;
                 }
             }
@@ -350,10 +345,24 @@ header{
             }
             margin-left: 20px;
             .email-input{
-                a{
-                    text-decoration: none;
-                    color: black;
-                    
+                // a{
+                //     text-decoration: none;
+                //     color: black;
+                // }
+                input{
+                    width: 400px;
+                    height: 30px;
+                    background-color: btn-bg-color;
+                    text-decoration: none
+                }
+            }
+            .btn-submit{
+                @extend %btn-toolbelt;
+               
+                margin-left: 0px;
+                margin-top: 20px;
+                &:hover{
+                    @include set-btn-hover(color);
                 }
             }
         }
@@ -446,3 +455,5 @@ header{
         }
     }
 }
+
+@import 'mobile';

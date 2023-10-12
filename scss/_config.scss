@@ -3,6 +3,7 @@ $primary-bg-color: #EFECE6;
 $secondary-bg-color:#E4E1DC;
 $btn-bg-color:$primary-bg-color;
 $btn-hover-color:black;
+@use 'sass:math';
 
 
 @mixin set-intro-text-color{
@@ -14,15 +15,20 @@ $btn-hover-color:black;
     background-#{$property} : $btn-hover-color;
     #{$property} :whitesmoke;
     transition :1s;
-    @debug "background-color: background-#{$property}";
+    @debug "background-color: background-#{$property}"; //debug
 }
 
 // set the text color based on the number of grid
 @function set-text-color($evenOrOdd) { //function
-    @if($evenOrOdd == 0) {
+    @if($evenOrOdd == 0) { //equality operator
         @return #000;
     }
     @else {
         @return #fff;
     }
+}
+
+@mixin set-font-size($n, $property){
+    #{$property}-left: $n * 30px; //numeric operator
+    #{$property}-right: $n * 30px; 
 }
