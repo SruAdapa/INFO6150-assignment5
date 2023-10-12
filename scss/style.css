@@ -1,0 +1,348 @@
+.perfect-shade-wrapper .perfect-shade-info .perfect-shade-content .perfect-shade-btn, #section2 .env-text .btn-philosophy, #intro .text .btn_discover {
+  position: relative;
+  align-self: center;
+  background-color: #EFECE6;
+  padding: 15px 60px;
+  margin: 0 auto;
+  display: block;
+  border-width: 0;
+}
+
+.perfect-shade-wrapper .perfect-shade-info .perfect-shade-content .perfect-shade-btn, #section2 .env-text .btn-philosophy, #intro .text .btn_discover {
+  position: relative;
+  align-self: center;
+  background-color: #EFECE6;
+  padding: 15px 60px;
+  margin: 0 auto;
+  display: block;
+  border-width: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #fffcfc;
+}
+
+:root {
+  --primary: #EFECE6;
+}
+
+header {
+  background-color: white;
+}
+header nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+header nav img {
+  width: 120px;
+  height: 60px;
+}
+header nav ul li {
+  margin: 10px;
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#intro {
+  background-image: url(/images/img39.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  position: relative;
+  margin-bottom: 20px;
+}
+#intro .text {
+  position: absolute;
+  margin-top: 300px;
+  color: whitesmoke;
+  text-align: center;
+}
+#intro .text .heading-text {
+  font-size: 30px;
+}
+#intro .text .para-text {
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 20px;
+}
+#intro .text .btn_discover {
+  padding: 15px 40px;
+}
+#intro .text .btn_discover:hover {
+  background-color: black;
+  color: whitesmoke;
+  transition: 1s;
+}
+
+#section2 {
+  display: flex;
+  margin-bottom: 20px;
+  height: 90vh;
+}
+#section2 img {
+  width: 50%;
+  float: left;
+}
+#section2 .env-text {
+  width: 50%;
+  padding: 30px;
+  background-color: var(--primary);
+}
+#section2 .env-text li {
+  list-style: none;
+}
+#section2 .env-text .btn-philosophy {
+  background-color: #d9d3c9;
+}
+#section2 .env-text .btn-philosophy:hover {
+  background-color: black;
+  color: whitesmoke;
+  transition: 1s;
+}
+
+.perfect-shade-wrapper {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+}
+.perfect-shade-wrapper .perfect-shade-info {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 13px 13px 47px;
+}
+.perfect-shade-wrapper .perfect-shade-info .perfect-shade-content .perfect-shade-title {
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+.perfect-shade-wrapper .perfect-shade-info .perfect-shade-content .perfect-shade-title em {
+  font-family: serif;
+  font-style: italic;
+}
+.perfect-shade-wrapper .perfect-shade-info .perfect-shade-content .perfect-shade-btn {
+  background-color: #d9d3c9;
+}
+.perfect-shade-wrapper .perfect-shade-info .perfect-shade-content .perfect-shade-btn:hover {
+  background-color: black;
+  color: whitesmoke;
+  transition: 1s;
+}
+.perfect-shade-wrapper .perfect-shade-item1 {
+  display: grid;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 1;
+  align-items: center;
+  display: flex;
+  max-width: 160px;
+  margin-left: 50px;
+}
+.perfect-shade-wrapper .perfect-shade-item1 img {
+  width: 100%;
+  height: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.perfect-shade-wrapper .perfect-shade-item2 {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 1;
+  grid-column-end: 6;
+  width: 100%;
+  max-width: 180px;
+  margin-left: 200px;
+  padding-left: 20px;
+}
+.perfect-shade-wrapper .perfect-shade-item2 img {
+  width: 80%;
+  height: 80%;
+  margin-top: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.perfect-shade-wrapper .perfect-shade-item3 {
+  grid-row-start: 2;
+  grid-column-start: 5;
+  grid-row-end: 4;
+  grid-column-end: 6;
+  width: 100%;
+  margin-top: -60px;
+}
+.perfect-shade-wrapper .perfect-shade-item3 img {
+  width: 80%;
+}
+.perfect-shade-wrapper .perfect-shade-item4 {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row-end: 4;
+  grid-column-end: 4;
+  width: 100%;
+  max-width: 220px;
+}
+.perfect-shade-wrapper .perfect-shade-item4 img {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 100%;
+  height: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.perfect-shade-wrapper .perfect-shade-item5 {
+  grid-row-start: 3;
+  grid-column-start: 4;
+  grid-row-end: 4;
+  grid-column-end: 5;
+  width: 100%;
+  max-width: 167px;
+}
+.perfect-shade-wrapper .perfect-shade-item5 img {
+  margin-top: 10px;
+  width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product-grid-list {
+  background-color: #EFECE6;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 40px;
+  margin-bottom: 30px;
+  padding: 0px 30px;
+  max-height: 800px;
+}
+.product-grid-list .back-img {
+  margin-top: 40px;
+}
+.product-grid-list .back-img p {
+  margin-top: -40px;
+  margin-left: 10px;
+  font-family: sans-serif;
+}
+.product-grid-list .back-img .p-even {
+  color: #000;
+}
+.product-grid-list .back-img .p-odd {
+  color: #fff;
+}
+.product-grid-list .back-img:hover .front-img {
+  height: 100%;
+  overflow: hidden;
+}
+.product-grid-list img {
+  width: 100%;
+  height: 80%;
+}
+
+.footer {
+  display: flex;
+  height: 50vh;
+}
+.footer-newsletter {
+  flex: 1;
+  background-color: #E4E1DC;
+  display: inline-block;
+  padding-top: 120px;
+}
+.footer-newsletter-text {
+  margin-left: 20px;
+}
+.footer-contact {
+  flex: 1;
+  background-color: #EFECE6;
+}
+.footer-contact .col {
+  display: inline-block;
+  margin: 20px;
+  padding-top: 70px;
+}
+.footer-contact .col ul li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+#philosophy {
+  background-image: url(/images/img47.webp);
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  position: relative;
+}
+#philosophy h4 {
+  position: absolute;
+  margin-top: 330px;
+  left: 40%;
+  font-size: 46px;
+  color: #EFECE6;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#philosophy-text {
+  height: 50vh;
+  padding-top: 100px;
+}
+#philosophy-text p {
+  text-align: center;
+}
+
+#about-1 {
+  display: flex;
+  margin-bottom: 20px;
+  max-height: 700px;
+}
+#about-1 img {
+  max-width: 50%;
+  float: left;
+}
+#about-1 .about1-text {
+  max-width: 50%;
+  padding: 30px;
+  background-color: #EFECE6;
+}
+
+#about-2 {
+  display: flex;
+  margin-bottom: 20px;
+  max-height: 700px;
+}
+#about-2 img {
+  max-width: 50%;
+}
+#about-2 .about2-text {
+  max-width: 50%;
+  float: left;
+  padding: 30px;
+  background-color: #EFECE6;
+}/*# sourceMappingURL=style.css.map */
