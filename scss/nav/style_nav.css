@@ -1,0 +1,45 @@
+header {
+  background-color: white;
+}
+header nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+header nav img {
+  width: 150px;
+  height: 60px;
+  margin-left: -40px;
+}
+header nav ul li {
+  margin: 10px;
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+header nav ul li a::after {
+  content: "";
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 1px;
+  transition: transform 0.7s ease-in-out;
+  background: black;
+  position: absolute;
+  transform: scaleX(0);
+}
+header nav ul li a:hover::after {
+  width: 100%;
+  transform: scaleX(1);
+}/*# sourceMappingURL=style_nav.css.map */

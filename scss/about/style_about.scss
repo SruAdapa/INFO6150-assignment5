@@ -1,0 +1,74 @@
+@import '../config';
+@import '../buttons';
+
+#philosophy{
+    background-image: url(/images/img47.webp);
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    position: relative;
+
+    h4{
+        position: absolute;
+        top:90px;
+         margin-top: 400px;
+        left: 40%;
+        font-size: 46px;
+        color: $primary-bg-color;
+        text-decoration: none;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    } 
+}
+
+#philosophy-text{
+    height: 300px;
+    padding-top: 100px;
+    padding-bottom: -30px;
+    p{
+        text-align: center; 
+        font-style: italic;
+        font-size: larger;
+    }
+}
+
+#about-1{
+    display: flex;
+    margin-bottom: 20px;
+    max-height: 700px;
+    img{
+        max-width: 50%;
+        float: left;
+    }
+    .about1-text{
+        max-width: 50%;
+        padding: 70px;
+        padding-top: 200px;
+        background-color: $primary-bg-color;
+        h4{
+            font-style: italic;
+            font-weight: lighter;
+            font-size: x-large;
+        }
+    }
+}
+
+#about-2{
+    display: flex;
+    margin-bottom: 20px;
+    max-height: 700px;
+    img{
+        max-width: 50%;
+    }
+    .about2-text{
+        max-width: 50%;
+        float: left;
+        padding: 70px;
+        padding-top: 200px;
+        background-color: $primary-bg-color;
+        h4{
+            font-style: italic;
+            font-weight: lighter;
+            font-size: x-large;
+        }
+    }
+}

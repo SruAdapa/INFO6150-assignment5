@@ -1,0 +1,53 @@
+@import '../config';
+@import '../buttons';
+
+header{
+    background-color: white;
+    nav{
+        position: sticky;
+        top:0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;  
+        align-items: center;
+        margin: {
+            left: 15px;
+            right: 15px;
+            top: 5px;
+            bottom: 5px;
+        }
+        img{
+            width: 150px;
+            height: 60px;
+            margin-left: -40px;
+        }
+    
+        ul{
+            li{
+                margin: 10px;
+                display: inline-block;
+                font-family: $primary-font-stack;
+                position: relative;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                a::after{
+                    content: '';
+                    left: 0;
+                    bottom: -5px;
+                    width: 0;
+                    height: 1px;
+                    transition: transform 0.7s ease-in-out;
+                    background: black;
+                    position: absolute;
+                    transform: scaleX(0);
+                }
+                a:hover::after{
+                    width: 100%;
+                    transform: scaleX(1);
+                }
+            }   
+        }
+    }
+}

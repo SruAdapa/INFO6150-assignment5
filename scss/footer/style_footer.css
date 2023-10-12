@@ -1,0 +1,57 @@
+.footer-newsletter-text .btn-submit {
+  position: relative;
+  align-self: center;
+  background-color: #EFECE6;
+  padding: 15px 60px;
+  margin: 0 auto;
+  display: block;
+  border-width: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+}
+
+.footer {
+  display: flex;
+  height: 50vh;
+}
+.footer-newsletter {
+  flex: 1;
+  background-color: #E4E1DC;
+  display: inline-block;
+  padding-top: 100px;
+}
+.footer-newsletter-text {
+  margin-left: 20px;
+}
+.footer-newsletter-text .title {
+  font-family: "Courier New", Courier, monospace;
+}
+.footer-newsletter-text .email-input input {
+  width: 400px;
+  height: 30px;
+  background-color: btn-bg-color;
+  text-decoration: none;
+}
+.footer-newsletter-text .btn-submit {
+  margin-left: 0px;
+  margin-top: 20px;
+}
+.footer-newsletter-text .btn-submit:hover {
+  background-color: black;
+  color: whitesmoke;
+  transition: 1s;
+}
+.footer-contact {
+  flex: 1;
+  background-color: #EFECE6;
+}
+.footer-contact .col {
+  display: inline-block;
+  margin: 15px;
+  padding-top: 70px;
+}
+.footer-contact .col ul li {
+  font-family: "Courier New", Courier, monospace;
+  list-style-type: none;
+  margin: 20px;
+}/*# sourceMappingURL=style_footer.css.map */

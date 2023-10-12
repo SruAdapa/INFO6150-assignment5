@@ -1,0 +1,56 @@
+@import '../config';
+@import '../buttons';
+
+.footer{
+    display: flex;
+    height: 50vh;
+    &-newsletter{
+        flex:1;
+        background-color: $secondary-bg-color;
+        display: inline-block;
+        padding-top: 100px;
+        &-text{
+            .title{
+                font-family: $primary-font-stack;
+            }
+            margin-left: 20px;
+            .email-input{
+                // a{
+                //     text-decoration: none;
+                //     color: black;
+                // }
+                input{
+                    width: 400px;
+                    height: 30px;
+                    background-color: btn-bg-color;
+                    text-decoration: none
+                }
+            }
+            .btn-submit{
+                @extend %btn-toolbelt;
+               
+                margin-left: 0px;
+                margin-top: 20px;
+                &:hover{
+                    @include set-btn-hover(color);
+                }
+            }
+        }
+    }
+    &-contact{
+        flex:1;
+        background-color: $primary-bg-color;
+        .col{
+            display: inline-block;
+            margin: 15px;
+            padding-top: 70px;
+            ul{
+                li{
+                    font-family: $primary-font-stack;
+                    list-style-type: none;
+                    margin: 20px;
+                }
+            }
+        }
+    }   
+}
